@@ -1,0 +1,189 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7; /* Light grey background */
+    color: #111; /* Dark text color for better readability */
+  }
+  
+  .header {
+    background: #000000; /* Dark Amazon header color */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;                                                    
+    justify-content: space-between;
+  }
+  
+  .header .logo h1 {
+    font-size: 24px;
+    font-weight: 70;
+    margin: 0;
+    padding-left: 10px;
+    color: #ff9900; /* Amazon's signature yellow color */
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav ul li button {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .nav ul li button:hover {
+    background-color: #565656;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .search-bar button {
+    background-color: #ff9900; /* Amazon yellow button */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #232f3e; /* Amazon's dark blue background */
+    color: #fff;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #ff9900; /* Amazon yellow */
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .btn:hover {
+    background-color: #e68900; /* Slightly darker yellow on hover */
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product {
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .product img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .product p {
+    color: #b12704; /* Amazon's price color */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    background-color: #ff9900; /* Amazon yellow */
+    border: 1px solid #a88734;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: white;
+    margin: auto 0px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #e68900; /* Darker yellow on hover */
+  }
+  
+  .cart {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .cart h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .cart p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .cart button {
+    background-color: #ff9900; /* Amazon yellow */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  .cart button:hover {
+    background-color: #e68900; /* Darker yellow on hover */
+  }
+  
+  .footer {
+    background-color: #131921; /* Dark Amazon footer color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .footer p {
+    margin: 0;
+  }

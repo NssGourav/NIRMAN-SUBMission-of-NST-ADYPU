@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #32a852;
+    color: white;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #cdeccd;
+  }
+  
+  .nav .active {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .category-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(to right, #56d2b5, #32a852);
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background: white;
+    color: #32a852;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #cdeccd;
+    color: #056835;
+  }
+  
+
+  .products {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .products h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #32a852;
+  }
+  
+  .product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .category-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .category-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .category-card p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .category-card button {
+    background: #32a852;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .category-card button:hover {
+    background: #56d2b5;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #32a852;
+    color: white;
+  }
+  

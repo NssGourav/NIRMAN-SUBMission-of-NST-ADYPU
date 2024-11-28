@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    overflow-y: auto; 
+}
+
+
+.navbar {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.categories select {
+    background-color: transparent;
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-icon {
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.main {
+    background-image: url(hero.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero_msg h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero_msg p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: rgba(237, 237, 221, 0.8);
+}
+
+
+.men-women {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(227, 227, 219);
+    gap: 20px;
+}
+
+.box {
+    width: 48%;
+    height: 520px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.men_content, .women_content {
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.men_content {
+    background-image: url(men_shop.png);
+}
+
+.women_content {
+    background-image: url(women_shop.png);
+}
+
+.men_link, .women_link {
+    height: 20%;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.men_link:hover, .women_link:hover {
+    background-color: #006666;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .categories {
+        margin-top: 10px;
+    }
+
+    .men-women {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .hero_msg h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero_msg p {
+        font-size: 1.2rem;
+    }
+}

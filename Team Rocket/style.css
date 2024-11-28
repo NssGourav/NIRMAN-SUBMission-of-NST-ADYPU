@@ -1,0 +1,75 @@
+.sale-section{
+    color:white;
+    background-color: black;
+    line-height: 2;
+    margin:-15px -10px;
+    text-align: center;
+    width: auto;
+   
+}
+#taskbar{
+    background-color: rgb(243, 243, 243);
+    height:50px;
+    width: auto;
+    border:1px solid pink;
+    margin:-10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.task{
+    display: inline-block;
+    margin:15px 40px;
+
+}
+img{
+    height:775px;
+    width: auto;
+    margin:10px -10px;
+}
+
+#category{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    color: rgb(24, 25, 25);
+}
+.category{
+    display: inline-block;
+}
+
+#footer{
+    background-color: rgb(64, 64, 64);
+    color: white;
+    padding: 30px;
+    margin :0px -10px -10px;
+}
+#footer p{
+    font-size: 15px;
+    margin:0px -10px;
+    line-height: 2;
+}
+#f1,#f2,#f3{
+    display: inline-block;
+    padding: 10px;
+    align-items: top;
+    margin: 0px 140px;
+}
+.img1,.img2,.img3,.img4{
+    height: 400px;
+    margin:10px 30px;
+    display: inline-block;
+
+}
+#category a{
+    display: block;
+    color: black;
+}
+.love{
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    line-height: 2;
+    margin :0px -10px -10px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="icon" href="ecom-removebg-preview.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="#"><img src="ecom-removebg-preview.png" alt="Shop Logo" class="logo-img"></a>
+        </div>
+        <nav class="nav-links">
+            <a href="#products" class="nav-item">SHOP</a>
+            <a href="#about" class="nav-item">ABOUT</a>
+        </nav>
+        <div class="cart">
+            <a href="#" id="cart-link"><i class="fas fa-shopping-cart"></i>CART (0)</a>
+        </div>
+    </header>
+
+
+    <section id="products" class="products">
+        <h1 class="products-head">Our Products</h1>
+
+        <div class="product-cards">
+            <div class="product-card" data-price="2.99">
+                <div class="product-image">
+                    <img src="DALL·E 2024-11-26 18.38.52 - Create a sleek, modern energy drink can featuring the 'Thunderbolt' logo for Classic Thunderbolt (Original Flavor). The can design should be metallic .webp" alt="Classic Thunderbolt" class="product-img" onclick="openModal('Classic Thunderbolt', 'https://via.placeholder.com/1200x500', 'Unleash the storm with Classic Thunderbolt – the original flavor that electrifies your senses...', '2.99')">
+                </div>
+                <div class="product-details">
+                    <h1>Classic Thunderbolt (Original Flavor)</h1>
+                    <p>Unleash the storm with Classic Thunderbolt – the original flavor that electrifies your senses...</p>
+                    <h3>$2.99</h3>
+                    <div class="price-details">
+                        <p>Price Details: <strong>$2.99</strong> per unit. Get a pack of 6 for <strong>$17.94</strong>.</p>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-price="4.99">
+                <div class="product-image">
+                    <img src="DALL·E 2024-11-26 18.38.08 - Create a sleek, modern energy drink can featuring the 'Thunderbolt' logo for Turbo Burst (Energy Flavor). The can design should be vibrant metallic re.webp" alt="Turbo Burst" class="product-img" onclick="openModal('Turbo Burst', 'https://via.placeholder.com/1200x500', 'Feel the rush with Turbo Burst – an explosion of flavor that hits you like a rocket...', '4.99')">
+                </div>
+                <div class="product-details">
+                    <h1>Turbo Burst (Energy Flavor)</h1>
+                    <p>Feel the rush with Turbo Burst – an explosion of flavor that hits you like a rocket...</p>
+                    <h3>$4.99</h3>
+                    <div class="price-details">
+                        <p>Price Details: <strong>$4.99</strong> per unit. Get a pack of 6 for <strong>$29.94</strong>.</p>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-price="3.49">
+                <div class="product-image">
+                    <img src="DALL·E 2024-11-26 18.43.56 - Create a sleek, modern energy drink can featuring the 'Thunderbolt' logo for Solar Shock (Spicy Flavor). The can design should be fiery orange and red.webp" alt="Solar Shock" class="product-img" onclick="openModal('Solar Shock', 'https://via.placeholder.com/1200x500', 'Experience the heat with Solar Shock – a spicy, electrifying flavor...', '3.49')">
+                </div>
+                <div class="product-details">
+                    <h1>Solar Shock (Spicy Flavor)</h1>
+                    <p>Experience the heat with Solar Shock – a spicy, electrifying flavor...</p>
+                    <h3>$3.49</h3>
+                    <div class="price-details">
+                        <p>Price Details: <strong>$3.49</strong> per unit. Get a pack of 6 for <strong>$20.94</strong>.</p>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-price="5.99">
+                <div class="product-image">
+                    <img src="DALL·E 2024-11-26 18.44.00 - Create a sleek, modern energy drink can featuring the 'Thunderbolt' logo for Cosmic Nectar (Sweet Flavor). The can design should be deep purple and pi.webp" alt="Cosmic Nectar" class="product-img" onclick="openModal('Cosmic Nectar', 'https://via.placeholder.com/1200x500', 'A sweet burst of flavor that takes you to another galaxy – Cosmic Nectar...', '5.99')">
+                </div>
+                <div class="product-details">
+                    <h1>Cosmic Nectar (Sweet Flavor)</h1>
+                    <p>A sweet burst of flavor that takes you to another galaxy – Cosmic Nectar...</p>
+                    <h3>$5.99</h3>
+                    <div class="price-details">
+                        <p>Price Details: <strong>$5.99</strong> per unit. Get a pack of 6 for <strong>$35.94</strong>.</p>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-product-title">Product Title</h2>
+            <img id="modal-product-image" src="" alt="Product Image" class="modal-image">
+            <p id="modal-product-description">Product Description</p>
+            <h3 id="modal-product-price">$0.00</h3>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <footer id="about">
+        <p>&copy; 2024 Shop. All rights reserved. Follow us on:</p>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>

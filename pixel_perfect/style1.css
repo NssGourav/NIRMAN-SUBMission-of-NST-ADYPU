@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, skyblue, lightpink);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: lightyellow;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(to bottom, navy, violet);
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    animation: typing 4s steps(30, end), blink 0.5s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from { border-right-color: white; }
+    to { border-right-color: transparent; }
+}
+
+.hero-image img {
+    width: 400px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.btn-primary {
+    background: yellow;
+    color: black;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    background: lightgreen;
+}
+
+/* Adjust the Explore Products button position */
+.hero-content .btn-primary {
+    margin-top: 20px; /* Ensure the button doesn't overlap the text */
+}
+
+/* Categories Section */
+.categories-section {
+    padding: 3rem 2rem;
+    background: lightgray;
+    text-align: center;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.category-box img {
+    width: 100px;
+    border-radius: 50%;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+}
+
+/* Products Section */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.contact-section input, .contact-section textarea, .btn-primary {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section textarea {
+    height: 100px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 1rem 0;
+}
+.hero-image{
+    border:2px solid beige;
+}
+ .categories-grid {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    height: auto; /
+    
+  }
+  
+  .categories-grid {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .categories-grid {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  

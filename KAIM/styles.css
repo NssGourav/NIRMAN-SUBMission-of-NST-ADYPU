@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lavenderblush;
+    color: #fff;
+}
+
+header {
+    background-color: lavenderblush;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: black;
+    font-family:"oblique";
+    text-decoration: underline;
+
+}
+
+header p {
+    font-size: 1rem;
+    color: black;
+}
+
+/* Product Container */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+}
+
+.product {
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: black;
+}
+
+.product p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.product .buy-btn {
+    background-color: peachpuff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product .buy-btn:hover {
+    background-color: #ffdd55;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    font-size: 1rem;
+    color: #bbb;
+}

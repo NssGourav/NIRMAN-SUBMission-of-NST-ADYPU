@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back2Earth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+        
+body {font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #6dbE4A, #2e8b57);
+    color: white;}
+        
+header { background-color: #2e8b57;padding: 20px 0;text-align: center;}
+        
+header .logo {font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;}
+        
+header nav {margin-top: 10px;}
+        
+header nav a {color: white;margin: 0 15px;
+            text-decoration: none;
+        font-size: 18px;}
+        
+/*shopit ka*/
+    #shopit {padding: 50px 20px;
+            text-align: center;}
+        
+    .section-title {font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 40px;}
+    .section{font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 40px;text-align: left;color: aqua;
+            font-style: inherit;}
+    
+        
+    .category-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;}
+        
+     .category-card { background: #fff; color: #333; width: 22%;padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+        
+    .category-card img {width: 100%;height: 200px;
+            object-fit: cover;
+            border-radius: 8px;}
+        
+    .category-card h3 {margin-top: 10px;
+            font-size: 20px;}
+        
+.category-card p {margin-top: 5px;
+            font-size: 16px; }
+        
+/*give itt */
+    #giveit {
+            padding: 50px 20px;
+            background-color: #2e8b57;}
+        
+    .donate-container {
+            text-align: center;}
+        
+    .donate-container h2 {font-size: 28px;
+            margin-bottom: 20px;}
+        
+    form {max-width: 500px;
+            margin: 0 auto;
+            text-align: left;}
+        
+    form label {display: block;
+            margin-bottom: 10px;
+            font-size: 16px;}
+        
+    form textarea,
+    form input {width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;}
+        
+    form button {background-color: #6dbE4A;
+            color: white;
+            padding: 10px 20px;border: none;
+            cursor: pointer;
+            font-size: 18px;border-radius: 5px;}
+        
+    form button:hover {background-color: #2e8b57;}
+        
+/* Footer */
+        footer {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;}
+        
+        footer .footer-logo {
+            font-size: 30px;
+            margin-bottom: 20px;}
+        
+        footer .footer-nav {
+            margin-bottom: 20px;}
+        
+        footer .footer-nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;}
+        
+        footer .social-icons a {
+            margin: 0 10px; }
+        
+        footer .social-icons img {
+            width: 30px;
+            height: 30px;}
+        </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"  >
+            <img src="./WhatsApp Image 2024-11-26 at 17.38.47 (1).jpeg" height="200px" >
+            </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shopit">ShopIt</a>
+            <a href="#giveit">GiveIt</a>
+            <a href="#upcoming">Upcoming</a>
+        </nav>
+    </header>
+
+    <!-- ShopIt Section -->
+    <section id="shopit">
+        <div class="section-title">Shop Eco-Friendly</div>
+
+        <!-- Personal Care Category -->
+         <h1 style="padding-bottom: 10PX;">PERSONAL CARE</h1>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="./pc1.avif" alt="Personal Care">
+                <h3>1</h3>
+                <p>Eco-friendly skincare product.</p>
+            </div>
+            <div class="category-card">
+                <img src="./natural-shampoo-bar-for-dry-and- (1).webp" alt="Personal Care">
+                <h3>2</h3>
+                <p>Eco-friendly skincare product.</p>
+            </div>
+            <div class="category-card">
+                <img src="./bio cleaning devices .webp" alt="Personal Care">
+                <h3>3</h3>
+                <p>Eco-friendly skincare product.</p>
+            </div>
+            <div class="category-card">
+                <img src="./bamboo-toothbrush-500x500.webp" alt="Personal Care">
+                <h3>4</h3>
+                <p>Eco-friendly skincare product.</p>
+            </div>
+        </div>
+
+        <!-- Fashion Category -->
+        <h1 style="padding-bottom: 10PX;">FASHION AND ACCESSORIES</h1>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="./Eco-friendly bags.jpg" alt="Fashion">
+                <h3>1</h3>
+                <p>Sustainable clothing item.</p>
+            </div>
+            <div class="category-card">
+                <img src="./Accessories made from upcycled m.webp" alt="Fashion">
+                <h3>2</h3>
+                <p>Sustainable clothing item.</p>
+            </div>
+            <div class="category-card">
+                <img src="./Recycled footwear.webp" alt="Fashion">
+                <h3>3</h3>
+                <p>Sustainable clothing item.</p>
+            </div>
+            <div class="category-card">
+                <img src="./Sustainable clothing (organic co.jpg" alt="Fashion">
+                <h3>4</h3>
+                <p>Sustainable clothing item.</p>
+            </div>
+        </div>
+
+        <!-- Home Essentials Category -->
+        <h1 style="padding-bottom: 10PX;">HOME-ESSENTIALS</h1>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="./Plastic-free packaged snacks.jpg" alt="Home Essentials">
+                <h3>1</h3>
+                <p>Eco-friendly home products.</p>
+            </div>
+            <div class="category-card">
+                <img src="./Compostable garbage bags.jpg" alt="Home Essentials">
+                <h3>2</h3>
+                <p>Eco-friendly home products.</p>
+            </div>
+            <div class="category-card">
+                <img src="./Reusable kitchen towels.jpg" alt="Home Essentials">
+                <h3>3</h3>
+                <p>Eco-friendly home products.</p>
+            </div>
+            
+        </div>
+
+
+        <!-- Kids, Women, and Baby Product Category -->
+        <!--<div class="section">Kids & Baby -->
+            <h1 style="padding-bottom: 10PX;">KIDS AND BABY</h1>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="./Wooden toys.webp" alt="Kids, Women & Baby Products">
+                <h3>1</h3>
+                <p>Eco-friendly baby products.</p>
+            </div>
+            <div class="category-card">
+                <img src="./Cloth diapers.webp" alt="Kids, Women & Baby Products">
+                <h3>2</h3>
+                <p>Eco-friendly baby products.</p>
+            </div>
+            <div class="category-card">
+                <img src="./Organic baby care products.png" alt="Kids, Women & Baby Products">
+                <h3>3</h3>
+                <p>Eco-friendly baby products.</p>
+            </div></div>
+
+            
+        </div>
+        <div class="section-title">STAY TUNED FOR..</div>
+        <!-- Gardening Category -->
+        <div class="category-container">
+            <div class="category-card">
+                <img src="https://via.placeholder.com/300x200" alt="Gardening">
+                <h3>Gardening 1</h3>
+                <p>Eco-friendly gardening tools.</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/300x200" alt="Gardening">
+                <h3>Gardening 2</h3>
+                <p>Eco-friendly gardening tools.</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/300x200" alt="Gardening">
+                <h3>Gardening 3</h3>
+                <p>Eco-friendly gardening tools.</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/300x200" alt="Gardening">
+                <h3>Gardening 4</h3>
+                <p>Eco-friendly gardening tools.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- GiveIt Section -->
+    <section id="giveit">
+        <div class="donate-container">
+            <h2>Donate for a Better Tomorrow</h2>
+            <form>
+                <label for="what-is-it">What is it?</label>
+                <textarea id="what-is-it" rows="4" placeholder="Describe your donation"></textarea>
+                <label for="how-much-is-it">What's the quantity?</label>
+                <input type="number" id="how-much-is-it" placeholder="Amount in kg" />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Back2Earth</div>
+
+        <div class="footer-nav">contact us
+            
+        </div>
+        <div class="social-icons"> 
+            <a href="https://facebook.com"><img src="https://via.placeholder.com/30x30" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="https://via.placeholder.com/30x30" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="https://via.placeholder.com/30x30" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

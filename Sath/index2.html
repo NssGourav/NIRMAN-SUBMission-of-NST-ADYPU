@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Used Books - B-Shop</title>
+    <link rel="stylesheet" href="buy-books.css">
+</head>
+<body>
+    <header>
+        <div class="logo">B-Shop</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search books...">
+            <button>Search</button>
+        </div>
+        <div class="header-icons">
+            <a href="#">Wishlist</a>
+            <a href="#">Cart</a>
+            <a href="#">Account</a>
+        </div>
+    </header>
+
+    <section class="filters">
+        <h2>Buy Used Books</h2>
+        <div class="filter-options">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="fiction">Fiction</option>
+                <option value="motivational">Motivational</option>
+                <option value="horror">Horror</option>
+                <option value="poetry">Poetry</option>
+                <option value="students">For Students</option>
+            </select>
+
+            <label for="price">Price Range:</label>
+            <select id="price">
+                <option value="all">All Prices</option>
+                <option value="low">Under ₹500</option>
+                <option value="medium">₹500 - ₹1000</option>
+                <option value="high">Above ₹1000</option>
+            </select>
+
+            <button class="filter-btn">Apply Filters</button>
+        </div>
+    </section>
+
+    <section class="book-list">
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/1280px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg" alt="Book 1">
+            <p class="book-title">To Kill a Mockingbird</p>
+            <p class="book-price">₹400</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Yakov_Guminer_-_Arithmetic_of_a_counter-plan_poster_%281931%29.jpg" alt="Book 2">
+            <p class="book-title">1984</p>
+            <p class="book-price">₹350</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="book-card">
+            <img src="https://cms.buybooksindia.com/uploads/books/9789393674807_0_1652786555.jpeg" alt="Book 3">
+            <p class="book-title">All In One</p>
+            <p class="book-price">₹450</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71OXQZezcnL._AC_UF1000,1000_QL80_.jpg" alt="Book 4">
+            <p class="book-title">The History Of Ancient World</p>
+            <p class="book-price">₹500</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71vfo4cJCjL._AC_UF1000,1000_QL80_.jpg" alt="Book 5">
+            <p class="book-title">Theory Of Everything</p>
+            <p class="book-price">₹600</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </section>
+</body>
+</html>

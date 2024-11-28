@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: white;
+  color: #ff3e96;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Women's Section */
+.section {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #777;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 18px;
+  color: #f39c12;
+  margin-top: 10px;
+}
+
+.product-card .btn {
+  background-color: #ff5e57;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.product-card .btn:hover {
+  background-color: #e74c3c;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}

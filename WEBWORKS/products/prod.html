@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name - Your Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Your Store</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Details Section -->
+    <main>
+        <div class="product-container">
+            <!-- Product Image -->
+            <div class="product-image">
+                <img src="path/to/product-image.jpg" alt="Product Name">
+            </div>
+
+            <!-- Product Information -->
+            <div class="product-info">
+                <h1>Product Name</h1>
+                <p class="price">$99.99</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is a short description of the product.</p>
+
+                <!-- Product Variants -->
+                <div class="product-variants">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+
+                    <label for="color">Color:</label>
+                    <select id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+
+                <!-- Add to Cart Button -->
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product Details Tabs -->
+        <section class="product-tabs">
+            <button class="tab active" onclick="openTab(event, 'description')">Description</button>
+            <button class="tab" onclick="openTab(event, 'reviews')">Reviews</button>
+
+            <div id="description" class="tab-content active">
+                <h2>Product Description</h2>
+                <p>Detailed information about the product, features, and usage.</p>
+            </div>
+
+            <div id="reviews" class="tab-content">
+                <h2>Customer Reviews</h2>
+                <p>No reviews yet. Be the first to write one!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* Root Variables for Light and Dark Modes */
+:root {
+    --primary-color: #000;
+    --secondary-color: #f00;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --button-radius: 5px;
+}
+
+body.dark-mode {
+    --primary-color: #fff;
+    --secondary-color: #ff4500;
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-menu .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu .nav-link {
+    margin: 0 15px;
+    color: var(--secondary-color);
+    transition: color 0.3s;
+}
+
+.navbar-menu .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.btn {
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: var(--button-radius);
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    }
+
+
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+    color: #fff;
+    background-image: url("front.jpg");
+   
+}
+
+.hero-content .hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Product Section */
+.products .section-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0;
+}
+
+.product-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 20px;
+    height: 100vh;
+    
+}
+
+.product-content, .product-image {
+    flex: 1;
+
+   
+}
+
+
+.product-content .product-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.product-content .product-features {
+    margin: 15px 0;
+    list-style: none;
+}
+
+.product-content .product-features li {
+    margin-bottom: 10px;
+}
+
+.product-content .product-price {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    color: #fff;
+}
+.wrapper {
+    margin: 60px;
+
+
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  
+  .item {
+    color:white;
+    font-style:italic;
+    font-size:15px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(17, 16, 16);
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  }
+  
+  .item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  }
+  
+  .item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  }
+  
+  .item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  }
+  
+  .item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  }
+  
+  .item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  }
+  
+  .item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  }
+  
+  .item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  }
