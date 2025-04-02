@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    color: rgb(0, 0, 0);
+    box-shadow:0 0 7px black;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .header-icons a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header .header-icons a:hover {
+    text-decoration: underline;
+}
+
+.upload-section {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.upload-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.upload-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.upload-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.upload-option, .photo-option {
+    border: 2px solid #e74c3c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    background: white;
+}
+
+.upload-option h2, .photo-option h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #e74c3c;
+}
+
+.file-label {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-label:hover {
+    background: #e74c3c;
+}
+
+#file-upload {
+    display: none;
+}
+
+#take-photo-btn {
+    padding: 10px 15px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#take-photo-btn:hover {
+    background: #e74c3c;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
